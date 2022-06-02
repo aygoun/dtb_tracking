@@ -1,0 +1,38 @@
+.container-bodycontent{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1rem;
+}
+.username-bodycontent{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.username-title-bodycontent{
+    flex: 1;
+    font-size: 1.2em;
+    font-weight: 700;
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.username-inputDiv-bodycontent{
+    display: 1;
+    font-size: 1.2em;
+    font-weight: 700;
+    padding: 1rem;
+}
+.username-input-bodycontent{
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-size: 1em;
+    border-radius: 15px;
+}
+.username-submit-button-bodycontent{
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-size: 1em;
+    border-radius: 15px;
+}
