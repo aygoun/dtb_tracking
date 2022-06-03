@@ -28,11 +28,37 @@
     padding: 0.5rem;
     margin: 0.5rem;
     font-size: 1em;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 .username-submit-button-bodycontent{
-    padding: 0.5rem;
+    padding: 0.7rem;
     margin: 0.5rem;
-    font-size: 1em;
-    border-radius: 15px;
+    font-size: 0.8em;
+    border-radius: 10px;
+    font-weight: 700;
+}
+.ration-win-rate{
+    flex-direction: wrap;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+} 
+.win-rate{
+    flex: 1;
+    background-color: green;
+}
+.lose-rate{
+    flex: 1;
+    background-color: red;
+}
+.ration-div-content{
+    margin-right: 1rem;
+    color: white!important;
+}
+._2jJU2{
+    color: white!important;
+    font-weight: 700;
+}
+._2SJG2{
+    width: 600px;
 }
