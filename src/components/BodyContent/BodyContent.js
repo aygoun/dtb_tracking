@@ -67,6 +67,32 @@ function BodyContent() {
     }
   };
 
+  function CustomTooltip({ payload, label, active }) {
+    if (active) {
+      return (
+        <div
+          className="custom-tooltip"
+          style={{
+            color: "white",
+            backgroundColor: "#444444",
+            padding: "1rem",
+            borderRadius: 20,
+          }}
+        >
+          <p className="label">
+            <span style={{ fontWeight: 800 }}>Date:</span> {`${label}`}
+          </p>
+          <p className="intro">
+            <span style={{ fontWeight: 800 }}>Time:</span>{" "}
+            {`${payload[0].value}`} minutes
+          </p>
+        </div>
+      );
+    }
+
+    return null;
+  }
+
   return (
     <div className="container-bodycontent">
       <div className="username-bodycontent">
@@ -92,7 +118,7 @@ function BodyContent() {
             <MonoStackedBar
               data={[
                 { value: data.wins, color: "green", caption: "Wins" },
-                { value: data.loses, color: "orange", caption: "LOSES" },
+                { value: data.loses, color: "#F05454", caption: "LOSES" },
               ]}
               radius={5}
               width={1000000000}
@@ -109,11 +135,11 @@ function BodyContent() {
                   Here is your wins according to time
                 </h3>
                 <LineChart width={800} height={400} data={dataGraph}>
-                  <Line type="monotone" dataKey="uv" stroke="#8884d8" />
+                  <Line type="monotone" dataKey="uv" stroke="#DDDDDD" />
                   <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
-                  <XAxis dataKey="name" stroke="#8884d8" />
-                  <YAxis stroke="#8884d8" />
-                  <Tooltip />
+                  <XAxis dataKey="name" stroke="#F05454" />
+                  <YAxis stroke="#F05454" />
+                  <Tooltip content={<CustomTooltip />} />
                 </LineChart>
               </>
             )}
