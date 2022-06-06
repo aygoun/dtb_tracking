@@ -117,7 +117,7 @@ function BodyContent() {
           <div className="ration-win-rate">
             <MonoStackedBar
               data={[
-                { value: data.wins, color: "green", caption: "Wins" },
+                { value: data.wins, color: "green", caption: "WINS" },
                 { value: data.loses, color: "#F05454", caption: "LOSES" },
               ]}
               radius={5}
