@@ -117,8 +117,8 @@ function BodyContent() {
           <div className="ration-win-rate">
             <MonoStackedBar
               data={[
-                { value: data.wins, color: "green", caption: "WINS" },
-                { value: data.loses, color: "#F05454", caption: "LOSES" },
+                { value: data.wins, color: "green", caption: "GAMES WON" },
+                { value: data.loses, color: "#F05454", caption: "GAMES LOST" },
               ]}
               radius={5}
               width={1000000000}
@@ -127,12 +127,12 @@ function BodyContent() {
           <center>
             {dataGraph.length === 0 ? (
               <div>
-                <h1>No graph data found</h1>
+                <h1>No data found</h1>
               </div>
             ) : (
               <>
                 <h3 style={{ marginTop: "3rem" }}>
-                  Here is your wins according to time
+                    Here is your wins according to time (in minutes)dd
                 </h3>
                 <LineChart width={800} height={400} data={dataGraph}>
                   <Line type="monotone" dataKey="uv" stroke="#DDDDDD" />
