@@ -132,7 +132,7 @@ function BodyContent() {
             ) : (
               <>
                 <h3 style={{ marginTop: "3rem" }}>
-                    Here is your wins according to time (in minutes)dd
+                    Here are the games won according to their duration
                 </h3>
                 <LineChart width={800} height={400} data={dataGraph}>
                   <Line type="monotone" dataKey="uv" stroke="#DDDDDD" />

@@ -8,7 +8,7 @@ function Header() {
         <a style={{textDecoration: "none", color: "white"}} href="https://aygoun.github.io/Attack-On-Castle-Web.github.io/">
           DTB
         </a>{" "}
-        | Start tracking your progress!
+        | Starts tracking your progress!
       </h1>
     </div>
   );
