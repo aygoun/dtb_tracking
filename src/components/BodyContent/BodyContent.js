@@ -113,7 +113,7 @@ function BodyContent() {
         </div>
       </div>
       {data.wins !== undefined ? (
-        <div className="main-div-content" style={{ marginTop: "3rem" }}>
+        <div className="main-div-content" style={{ marginTop: "0.5rem", marginBottom: "1rem"}}>
           <div className="ration-win-rate">
             <MonoStackedBar
               data={[
@@ -131,7 +131,7 @@ function BodyContent() {
               </div>
             ) : (
               <>
-                <h3 style={{ marginTop: "3rem" }}>
+                <h3 style={{ marginTop: "1rem" }}>
                     Here are the games won according to their duration
                 </h3>
                 <LineChart width={800} height={400} data={dataGraph}>
